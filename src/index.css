@@ -1,0 +1,197 @@
+/* Estilos gerais */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to right, #ebebeb, rgb(235, 230, 191));
+  max-width: 100%;
+  max-height: 100vh;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 20px;
+}
+
+/* Estilos para o lado esquerdo (senha principal) */
+.left-side {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 50%;
+}
+
+.password-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  height: 750px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  border: 3px solid rgb(230, 173, 18);
+}
+
+.password {
+  font-size: 230px;
+  font-weight: bold;
+}
+
+/* Estilos para o lado direito (senhas anteriores) */
+.right-side {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50%;
+  height: 100%;
+}
+
+.password-chamada {
+  background-color: #ffffff63;
+  color: rgb(0, 0, 0);
+  font-size: 300px;
+
+}
+
+.password-preparacao {
+  background-color: #ffffff;
+  height: 100%;
+  font-size: 600px;
+}
+
+.password-text {
+  font-size: 90px; /* Ajuste o tamanho da fonte conforme necessário */
+}
+
+/* Estilos para PasswordForm */
+.password-form {
+  margin-bottom: 20px;
+}
+
+.password-input {
+  margin-right: 10px;
+  padding: 5px;
+}
+
+.submit-button {
+  padding: 5px 10px;
+}
+
+/* Estilos para PasswordList */
+.password-list {
+  margin-bottom: 20px;
+}
+
+.password-card {
+  cursor: pointer;
+  padding: 69px;
+  margin-bottom: 20px;
+  border-radius: 16px;
+  font-weight: bold;
+}
+
+/* Estilos para as colunas de senha */
+.password-columns {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.password-column {
+  width: 45%;
+}
+
+/* Estilos para as senhas chamadas */
+.chamada-passwords {
+  width: 60%;
+  height: 50%;
+}
+
+.chamada-passwords h2 {
+  text-align: center;
+}
+
+.chamada-passwords .password-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 20px;
+}
+
+.all {
+  margin-left: 150px;
+  height: 100px;
+  width: 100%;
+  margin-bottom: 100px;
+}
+
+img {
+  margin-top: 1rem;
+  width: 150px;
+  border-radius: 12px;
+}
+
+.slick-prev,
+.slick-next {
+  margin-left: 4rem;
+  display: none !important;
+}
+
+h1 {
+  color: rgb(0, 0, 0);
+}
+
+input {
+  margin-top: 2rem;
+  padding: 10px;
+  border-radius: 12px;
+  border: none;
+  padding: 5px;
+}
+
+.submit-button {
+  background-color: #ffd04e;
+  color: white;
+  border-radius: 12px;
+  border: none;
+  padding: 5px;
+}
+
+.password-card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-size: 20pt;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 16px;
+  font-weight: bold;
+}
+
+.password-form {
+  margin-left: 6rem;
+}
+
+.slick-slider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.bronze {
+  border: 4px solid #ff9900e7;
+  border-radius: 12px;
+}
+
+.ouro {
+  border-radius: 12px;
+  border: 4px solid #ffe600e7;
+}
+
+.apoiador {
+  border-radius: 12px;
+  border: 4px solid #575552e7;
+}
