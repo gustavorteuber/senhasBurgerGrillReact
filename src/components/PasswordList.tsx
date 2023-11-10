@@ -28,7 +28,7 @@ const PasswordList: React.FC<PasswordListProps> = ({
           onClick={() => onClickPassword(password.id)}
         >
           <span className="password-text">{password.value}</span>
-        </div>
+        </div>  
       ))}
     </div>
   );

@@ -14,6 +14,7 @@ interface Password {
 const App: React.FC = () => {
   const [passwords, setPasswords] = useState<Password[]>([]);
   const [currentPassword, setCurrentPassword] = useState<string | null>(null);
+  const [lastPostedPassword, setLastPostedPassword] = useState<string | null>(null);
 
   useEffect(() => {
     const storedPasswords = localStorage.getItem("passwords");
@@ -33,7 +34,11 @@ const App: React.FC = () => {
       chamada: false,
     };
     setPasswords([newPassword, ...passwords]);
+    setCurrentPassword(password);
+    setLastPostedPassword(password);
   };
+  
+  
 
   const handleClickPassword = (id: string) => {
     const updatedPasswords = passwords.map((password) => {
@@ -75,11 +80,17 @@ const App: React.FC = () => {
             )}
           </div>
           <PasswordForm onAddPassword={addPassword} />
+
+          {lastPostedPassword && (
+            <div className="last-posted-password">
+              Última senha postada: {lastPostedPassword}
+            </div>
+          )}
         </div>
         <div className="right-side">
             <img src={Logo} alt="" />
+            <h1>SENHAS PRONTAS: </h1>
           <div className="preparacao-passwords">
-            <h1>SENHAS PRONTAS </h1>
             <div className="password-columns">
               <div className="password-column">
                 <PasswordList
